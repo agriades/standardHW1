@@ -3,6 +3,7 @@ package com.standard.hw1
 import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class IntroActivity : AppCompatActivity() {
@@ -10,12 +11,18 @@ class IntroActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_intro)
 
-        val signInButton = findViewById<TextView>(R.id.tv_login_sign_in)
-        signInButton.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
+        val toLoginBtn = findViewById<TextView>(R.id.tv_intro_signin)
+        val toRegisterBtn = findViewById<TextView>(R.id.tv_intro_register)
+
+        toLoginBtn.setOnClickListener {
+            val toLoginIntent = Intent(this, LoginActivity::class.java)
+            startActivity(toLoginIntent)
         }
 
+        toRegisterBtn.setOnClickListener {
+            val myToast = Toast.makeText(this.applicationContext, "계정 등록 준비중!", Toast.LENGTH_SHORT)
+            myToast.show()
+        }
 
     }
 }

@@ -12,7 +12,7 @@
     <string name="login_find_pw">Forgot Password ?</string>
     <string name="login_outer">Or Sign up With</string>
 
-    <string name="button_sign_in">Sign in</string>
+    <string name="button_signin">Sign in</string>
     <string name="button_register">Register</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
