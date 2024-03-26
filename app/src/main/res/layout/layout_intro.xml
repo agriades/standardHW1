@@ -12,12 +12,12 @@
         android:id="@+id/iv_intro"
         android:layout_margin="9dp"
         android:layout_width="match_parent"
-        android:layout_height="463dp"
+        android:layout_height="400dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:background="@drawable/bg_r50_pink"
-        android:elevation="15dp">
+        android:elevation="4dp">
     </ImageView>
 
     <TextView
